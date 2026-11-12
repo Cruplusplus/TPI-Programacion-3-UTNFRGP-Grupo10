@@ -1,0 +1,22 @@
+﻿:root {
+    /* Paleta Principal Pastel */
+    --color-header-bg: #3B6989; /* Azul pastel sobrio para el encabezado */
+    --color-header-text: #FFFFFF;
+    --color-nav-bg: #E8F1F5; /* Celeste pastel muy claro para la navegación */
+    --color-nav-link: #2B4C65; /* Azul oscuro para texto de menú */
+    --color-nav-link-hover: #1A3043;
+    /* Superficies y Fondos */
+    --color-bg-main: #F4F7F9; /* Fondo general de la pantalla */
+    --color-bg-card: #FFFFFF; /* Fondo de contenedores y formularios */
+    --color-border: #D0DCE5; /* Bordes suaves de tablas y tarjetas */
+    /* Tipografía */
+    --color-text-main: #2C3E50; /* Gris oscuro suave (mejor contraste que negro puro) */
+    --color-text-muted: #7F8C8D;
+    /* Acciones y Estados Pastel */
+    --color-primary: #5C9ead; /* Cyan / Verde agua pastel */
+    --color-primary-hover: #4A8593;
+    --color-success: #81C784; /* Verde pastel para confirmaciones/altas */
+    --color-danger: #E57373; /* Rojo pastel para cancelaciones/bajas */
+    --color-danger-hover: #EF5350;
+    --color-warning: #FFB74D; /* Naranja pastel para alertas */
+}

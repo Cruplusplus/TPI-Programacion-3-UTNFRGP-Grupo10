@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TPINT_GRUPO_10_PR3.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Clinica Medica - UTN</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <link href="Css/Variables.css" rel="stylesheet" type="text/css" runat="server" /> 
+        <link href="Css/Site.css" rel="stylesheet" type="text/css" runat="server" /> 
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1>Clínica Médica UTN</h1>
+            <div class="user-info">
+                <span>Bienvenido, <asp:Label ID="lblUsuarioLogueado" runat="server" Font-Bold="true" /></span>
+                <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="btnCerrarSesion_Click" CssClass="btn-logout" CausesValidation="false" />
+            </div>
+        </header>
+
+        <nav>
+            <asp:HyperLink ID="hlPacientes" runat="server" NavigateUrl="~/ABMLPacientes.aspx">Gestión de Pacientes</asp:HyperLink>
+            <asp:HyperLink ID="hlMedicos" runat="server" NavigateUrl="~/ABMLMedicos.aspx">Gestión de Médicos</asp:HyperLink>
+            <asp:HyperLink ID="hlTurnos" runat="server" NavigateUrl="~/AsignarTurnos.aspx">Asignación de Turnos</asp:HyperLink>
+            <asp:HyperLink ID="hlListadoTurnos" runat="server" NavigateUrl="~/ListadoTurnos.aspx">Listado de Turnos</asp:HyperLink>
+            <asp:HyperLink ID="hlInformes" runat="server" NavigateUrl="~/Informes.aspx">Reportes e Informes</asp:HyperLink>
+        </nav>
+
+        <main>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+
+    </form>
+</body>
+</html>
