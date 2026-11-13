@@ -1,0 +1,243 @@
+@import url('Variables.css');
+
+/* Contenedor Principal de la Vista */
+.medicos-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* Tarjetas */
+.card {
+    background-color: var(--color-bg-card, #FFFFFF);
+    border: 1px solid var(--color-border, #D0DCE5);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+    margin: 0 0 16px 0;
+    color: var(--color-header-bg, #3B6989);
+    border-bottom: 1px solid var(--color-border, #D0DCE5);
+    padding-bottom: 8px;
+    font-size: 1.25rem;
+}
+
+.card h4 {
+    margin: 16px 0 10px 0;
+    color: var(--color-header-bg, #3B6989);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+/* Grilla Responsiva para Campos de Formulario */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--color-text-main, #2C3E50);
+}
+
+/* Controles de Entrada (TextBox, DropDownList) */
+.form-control {
+    padding: 8px 10px;
+    border: 1px solid var(--color-border, #D0DCE5);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: var(--color-text-main, #2C3E50);
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFFFFF;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-primary, #5C9EAD);
+    box-shadow: 0 0 0 2px rgba(92, 158, 173, 0.2);
+}
+
+/* Secciones Especificas */
+.horarios-section,
+.credenciales-section {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--color-border, #D0DCE5);
+}
+
+.horarios-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+/* CheckBoxList de Dias */
+.dias-checkboxlist {
+    width: 100%;
+}
+
+.dias-checkboxlist td {
+    padding: 6px 12px 6px 0;
+}
+
+.dias-checkboxlist label {
+    font-weight: normal;
+    margin-left: 4px;
+    cursor: pointer;
+    color: var(--color-text-main, #2C3E50);
+}
+
+/* Acciones y Botones */
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.88rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-primary, #5C9EAD);
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover, #4A8593);
+}
+
+.btn-secondary {
+    background-color: var(--color-nav-bg, #E8F1F5);
+    color: var(--color-nav-link, #2B4C65);
+    border: 1px solid var(--color-border, #D0DCE5);
+}
+
+.btn-secondary:hover {
+    background-color: #DDE8EE;
+}
+
+.btn-delete {
+    background-color: var(--color-danger, #E57373);
+    color: #FFFFFF;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+.btn-delete:hover {
+    background-color: var(--color-danger-hover, #EF5350);
+}
+
+/* Validadores y Mensajes */
+span[id*="rfv"],
+span[id*="cv"] {
+    color: var(--color-danger, #E57373) !important;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.mensaje-feedback {
+    font-weight: bold;
+    color: var(--color-header-bg, #3B6989);
+    margin-left: 10px;
+}
+
+/* Barra de Filtros y Busqueda */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 12px;
+    background-color: var(--color-bg-main, #F4F7F9);
+    border-radius: 6px;
+}
+
+.filter-bar .form-control {
+    max-width: 300px;
+}
+
+/* Grilla Responsiva */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.grid-medicos {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    border: 1px solid var(--color-border, #D0DCE5);
+}
+
+.grid-medicos th {
+    background-color: var(--color-header-bg, #3B6989);
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border, #D0DCE5);
+}
+
+.grid-medicos td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--color-border, #D0DCE5);
+    color: var(--color-text-main, #2C3E50);
+}
+
+.grid-medicos tr:nth-child(even) {
+    background-color: var(--color-bg-main, #F4F7F9);
+}
+
+.grid-medicos tr:hover {
+    background-color: #EDF4F7;
+}
+
+/* Paginador de la Grilla */
+.grid-pager td {
+    background-color: var(--color-nav-bg, #E8F1F5);
+    text-align: center;
+    padding: 8px;
+}
+
+.grid-pager a,
+.grid-pager span {
+    padding: 4px 9px;
+    margin: 0 2px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.grid-pager a {
+    background-color: #FFFFFF;
+    color: var(--color-nav-link, #2B4C65);
+    border: 1px solid var(--color-border, #D0DCE5);
+}
+
+.grid-pager span {
+    background-color: var(--color-header-bg, #3B6989);
+    color: #FFFFFF;
+}
