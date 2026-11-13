@@ -1,66 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\",
+  "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|c:\\users\\cruz\\documents\\github\\tpi-programacion-3-utnfrgp-grupo10\\tpint_grupo_10_pr3\\tpint_grupo_10_pr3\\vistas\\recovery.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\vistas\\recovery.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\abmlpacientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\abmlpacientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\vistas\\recovery.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\vistas\\recovery.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\vistas\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\vistas\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\css\\recovery.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\css\\recovery.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\vistas\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\vistas\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\abmlpacientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\abmlpacientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\abmlpacientes.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|c:\\users\\pc\\documents\\github\\tpi-programacion-3-utnfrgp-grupo10\\tpint_grupo_10_pr3\\tpint_grupo_10_pr3\\css\\abmlpacientes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\css\\abmlpacientes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\css\\recovery.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\css\\recovery.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|c:\\users\\pc\\documents\\github\\tpi-programacion-3-utnfrgp-grupo10\\tpint_grupo_10_pr3\\tpint_grupo_10_pr3\\css\\variables.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\css\\variables.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|c:\\users\\pc\\documents\\github\\tpi-programacion-3-utnfrgp-grupo10\\tpint_grupo_10_pr3\\tpint_grupo_10_pr3\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|c:\\users\\pc\\documents\\github\\tpi-programacion-3-utnfrgp-grupo10\\tpint_grupo_10_pr3\\tpint_grupo_10_pr3\\vistas\\recovery.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\vistas\\recovery.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\vistas\\recovery.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\vistas\\recovery.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\vistas\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\vistas\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\vistas\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\vistas\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\pagebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\pagebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\pagebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\site.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\site.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\site.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\tpint_grupo_10_pr3\\abmlpacientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE984582-E21F-4346-A3CF-26545ED09D69}|TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3.csproj|solutionrelative:tpint_grupo_10_pr3\\abmlpacientes.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,45 +82,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Login.aspx",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx",
               "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx",
               "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2026-11-12T16:27:15.192Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Recovery.aspx",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx",
               "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx",
               "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2026-11-12T16:39:20.193Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Variables.css",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Variables.css",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Css\\Variables.css",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Variables.css",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Css\\Variables.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-13T00:15:01.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Site.css",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Css\\Site.css",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Site.css",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Css\\Site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-12T16:02:49.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T00:09:30.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ABMLPacientes.aspx",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-11-11T23:31:57.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ABMLPacientes.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx.cs",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx.cs",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx.cs",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAqwAwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-11T23:32:02.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Recovery.css",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Recovery.css",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Css\\Recovery.css",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Recovery.css",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Css\\Recovery.css",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-12T16:39:49.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ABMLPacientes.css",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\ABMLPacientes.css",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Css\\ABMLPacientes.css",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\ABMLPacientes.css",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Css\\ABMLPacientes.css",
+              "ViewState": "AgIAACEAAAAAAAAAAAAwwJ0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-13T00:16:51.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Recovery.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx.cs",
               "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx.cs",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx.cs",
               "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Vistas\\Recovery.aspx.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -117,147 +218,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx.cs",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx.cs",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx.cs",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAADwvxIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T16:40:17.356Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Recovery.css",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Recovery.css",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Css\\Recovery.css",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Recovery.css",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Css\\Recovery.css",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAwFkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-12T16:39:49.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.css",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Login.css",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Css\\Login.css",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Login.css",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Css\\Login.css",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAwGIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-12T16:28:39.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Entidades\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Entidades\\Usuario.cs",
               "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Entidades\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Entidades\\Usuario.cs",
               "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Entidades\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T16:05:05.641Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Entidades\\Rol.cs",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Entidades\\Rol.cs",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Entidades\\Rol.cs",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Entidades\\Rol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T16:05:02.226Z"
+              "WhenOpened": "2026-11-12T16:05:05.641Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Site.Master.designer.cs",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master.designer.cs",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Site.Master.designer.cs",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master.designer.cs",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Site.Master.designer.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T16:03:19.964Z"
+              "Title": "Login.css",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Login.css",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Css\\Login.css",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Login.css",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Css\\Login.css",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAwGIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-12T16:28:39.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Site.css",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Site.css",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Css\\Site.css",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Css\\Site.css",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Css\\Site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-11-12T16:02:49.534Z"
+              "DocumentIndex": 9,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx.cs",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Vistas\\Login.aspx.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvxIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T16:40:17.356Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Site.Master",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Site.Master",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Site.Master",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-11-11T23:33:28.875Z"
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Entidades\\Rol.cs",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Entidades\\Rol.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Entidades\\Rol.cs",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Entidades\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T16:05:02.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
+              "Title": "Site.Master.designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master.designer.cs",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Site.Master.designer.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master.designer.cs",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Site.Master.designer.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T16:03:19.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Site.Master",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-11-11T23:33:28.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Site.Master.cs",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master.cs",
               "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\Site.Master.cs",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\Site.Master.cs",
               "RelativeToolTip": "TPINT_GRUPO_10_PR3\\Site.Master.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T23:33:04.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PageBase.cs",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\PageBase.cs",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\PageBase.cs",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\PageBase.cs",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\PageBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T23:32:42.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ABMLPacientes.aspx",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-11-11T23:31:57.641Z"
+              "WhenOpened": "2026-11-11T23:33:04.348Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ABMLPacientes.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx.cs",
-              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx.cs",
-              "ToolTip": "C:\\Users\\Cruz\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx.cs",
-              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\ABMLPacientes.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Title": "PageBase.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\PageBase.cs",
+              "RelativeDocumentMoniker": "TPINT_GRUPO_10_PR3\\PageBase.cs",
+              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\TPI-Programacion-3-UTNFRGP-Grupo10\\TPINT_GRUPO_10_PR3\\TPINT_GRUPO_10_PR3\\PageBase.cs",
+              "RelativeToolTip": "TPINT_GRUPO_10_PR3\\PageBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-11T23:32:02.779Z"
+              "WhenOpened": "2026-11-11T23:32:42.469Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -268,6 +329,20 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 970,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }
