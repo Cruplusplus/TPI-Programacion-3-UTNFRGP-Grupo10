@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ABMLPacientes.aspx" />
+    <Content Include="Css\ABMLPacientes.css" />
     <Content Include="Css\Site.css" />
     <Content Include="Css\Login.css" />
     <Content Include="Css\Recovery.css" />
