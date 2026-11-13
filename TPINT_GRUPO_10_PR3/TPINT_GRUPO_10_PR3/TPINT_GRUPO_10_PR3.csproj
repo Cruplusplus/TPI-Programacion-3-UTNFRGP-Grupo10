@@ -67,8 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ABMLMedicos.aspx" />
     <Content Include="ABMLPacientes.aspx" />
     <Content Include="Css\ABMLPacientes.css" />
+    <Content Include="Css\ABMLMedicos.css" />
     <Content Include="Css\Site.css" />
     <Content Include="Css\Login.css" />
     <Content Include="Css\Recovery.css" />
@@ -78,9 +80,16 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ABMLPacientes.aspx.cs">
-      <DependentUpon>ABMLPacientes.aspx</DependentUpon>
+    <Compile Include="ABMLMedicos.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ABMLMedicos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABMLMedicos.aspx.designer.cs">
+      <DependentUpon>ABMLMedicos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABMLPacientes.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ABMLPacientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="ABMLPacientes.aspx.designer.cs">
       <DependentUpon>ABMLPacientes.aspx</DependentUpon>
