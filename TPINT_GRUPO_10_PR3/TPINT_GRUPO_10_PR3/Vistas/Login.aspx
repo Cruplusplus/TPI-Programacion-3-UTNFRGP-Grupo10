@@ -15,19 +15,23 @@
                 <h2>Iniciar Sesión</h2>
 
                 <div class="campo">
-                    <label for="txtUsuario">Usuario</label>
-                    <input type="text" id="txtUsuario" runat="server" class="input" />
+                    <label for="txtUsername">Usuario</label>
+                    <input type="text" id="txtUsername" runat="server" class="input" />
+                    <br />
+                    <asp:RequiredFieldValidator ID="rfvUser" runat="server" ControlToValidate="txtUsername" ErrorMessage="Debe completar el campo para poder iniciar sesion"></asp:RequiredFieldValidator>
                 </div>
 
                 <div class="campo">
                     <label for="txtPassword">Contraseña</label>
                     <input type="password" id="txtPassword" runat="server" class="input" />
                     <br />
-                      <asp:LinkButton ID="lbtnRecovery" runat="server" PostBackUrl="~/Vistas/Recovery.aspx" CssClass="link-volver" CausesValidation="false">¿Olvidaste tu contraseña?</asp:LinkButton>
+                    <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="Debe completar la contraseña para poder iniciar sesion"></asp:RequiredFieldValidator>
+                    <br />
+                    <asp:LinkButton ID="lbtnRecovery" runat="server" PostBackUrl="~/Vistas/Recovery.aspx" CssClass="link-volver" CausesValidation="false">¿Olvidaste tu contraseña?</asp:LinkButton>
                 </div>
 
                 <div>
-                    <input type="submit" value="Iniciar Sesión" runat="server" class="btn-login" />
+                    <input type="submit" id="btnLogin" value="Iniciar Sesión" runat="server" class="btn-login" OnServerClick="btnLogin_Click" />
                 </div>
             </section>
         </div>

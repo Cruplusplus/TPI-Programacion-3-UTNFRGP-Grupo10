@@ -94,8 +94,12 @@
     <Compile Include="ABMLPacientes.aspx.designer.cs">
       <DependentUpon>ABMLPacientes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Datos\AccesoDatos.cs" />
+    <Compile Include="Datos\DaoUsers.cs" />
+    <Compile Include="Entidades\Persona.cs" />
     <Compile Include="Entidades\Rol.cs" />
     <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Negocio\NegocioUser.cs" />
     <Compile Include="PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
