@@ -10,11 +10,13 @@ namespace TPINT_GRUPO_10_PR3.Datos
     public class AccesoDatos
     {
         string cadenaConexion = "Data Source=localhost\\sqlexpress; Initial Catalog=Clinica_TPI;Integrated Security = True";
+
         private SqlConnection ObtenerConexion()
         {
             return new SqlConnection(cadenaConexion);
-
         }
+
+        // SELECT
         public DataTable ObtenerTabla(string nombreTabla, string sqlQuery, SqlParameter[] parametros = null)
         {
             DataTable dt = new DataTable(nombreTabla);
@@ -31,6 +33,7 @@ namespace TPINT_GRUPO_10_PR3.Datos
             return dt;
         }
 
+        // INSERT / UPDATE / DELETE
         public int EjecutarComando(string sqlQuery, SqlParameter[] parametros = null)
         {
             using (SqlConnection conexion = ObtenerConexion())

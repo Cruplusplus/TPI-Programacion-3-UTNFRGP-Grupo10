@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TPINT_GRUPO_10_PR3.Negocio;
 
 namespace TPINT_GRUPO_10_PR3.Vistas
 {
@@ -28,7 +29,18 @@ namespace TPINT_GRUPO_10_PR3.Vistas
             }
 
             // Acá llamás a Negocio para actualizar la contraseña
-            lblMensaje.Text = "";
+            string nombreUsuario = txtUsuario.Text;
+            string nuevaContraseña = txtNueva.Text;
+
+            NegocioUser negocioUser = new NegocioUser();
+            if (negocioUser.Recovery(nombreUsuario, nuevaContraseña))
+            {
+                lblMensaje.Text = "Contraseña actualizada correctamente.";
+            }
+            else
+            {
+                lblMensaje.Text = "Error al actualizar la contraseña.";
+            }
         }
     }
 }

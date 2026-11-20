@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.EnterpriseServices;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -16,17 +16,30 @@ namespace TPINT_GRUPO_10_PR3.Vistas
         }
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string nombreUsuario =txtUsername.Value;
-            string password =txtPassword.Value;
+            string nombreUsuario = txtUsername.Value;
+            string password = txtPassword.Value;
             Negocio.NegocioUser negocioUser = new Negocio.NegocioUser();
-            bool esValido = negocioUser.ValidarUsuario(nombreUsuario, password);
-            if (esValido)
+
+            if (negocioUser.ValidarUsuario(nombreUsuario, password))
             {
-                Session["NombreUsuario"] = nombreUsuario;
-                Response.Redirect("Site.Master");
+                Session["NombreUser"] = nombreUsuario;
+
+                int rol = negocioUser.obtenerRolPorNombre(nombreUsuario);
+
+                if (rol == 0)
+                    Response.Redirect("~/Site.master");   // admin
+                else if (rol == 1)
+                    Response.Redirect("~/ABMLMedicos.aspx");   // médico
+                else if (rol == 2)
+                    Response.Redirect("~/ABMLPacientes.aspx"); // paciente
+                else
+                    Response.Write("Rol no reconocido: " + rol);
+            }
+            else
+            {
+                Response.Write("Usuario o contraseña incorrectos");
             }
         }
-
         protected void lbtnRecovery_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Vistas/Recovery.aspx");

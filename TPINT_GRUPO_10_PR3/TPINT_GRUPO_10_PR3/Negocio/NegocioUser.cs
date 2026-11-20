@@ -17,7 +17,7 @@ namespace TPINT_GRUPO_10_PR3.Negocio
                 return false;
             }
 
-            string passwordBD = tabla.Rows[0]["Password"].ToString();
+            string passwordBD = tabla.Rows[0]["Passwords"].ToString();
 
             if (password == passwordBD)
             {
@@ -25,6 +25,25 @@ namespace TPINT_GRUPO_10_PR3.Negocio
             }
 
             return false;
+        }
+        public bool Recovery(string nombreUsuario, string password)
+        {
+            DaoUsers daoUsers = new DaoUsers();
+            if(daoUsers.modificarPassword(nombreUsuario, password))
+            {
+                return true;
+            }
+            return false;
+        }
+        public int obtenerIdPorNombre(string nombreUsuario)
+        {
+            DaoUsers daoUsers = new DaoUsers();
+            return Convert.ToInt32(daoUsers.obtenerIdPorNombre(nombreUsuario).Rows[0]["IdUser"]);
+        }
+        public int obtenerRolPorNombre(string nombreUsuario)
+        {
+            DaoUsers daoUsers = new DaoUsers();
+            return daoUsers.obtenerRolPorNombre(nombreUsuario);
         }
     }
 }
