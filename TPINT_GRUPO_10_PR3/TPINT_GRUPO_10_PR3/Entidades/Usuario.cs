@@ -9,6 +9,8 @@ namespace TPINT_GRUPO_10_PR3.Entidades
     {
         public int IdUsuario { get; set; }
         public string NombreUsuario { get; set; }
+        public string Password { get; set; }
         public Rol Rol { get; set; }
+        public bool Estado { get; set; }
     }
 }
