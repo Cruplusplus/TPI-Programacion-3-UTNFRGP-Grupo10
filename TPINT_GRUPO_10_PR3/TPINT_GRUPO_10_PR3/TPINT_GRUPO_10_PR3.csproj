@@ -96,6 +96,8 @@
     </Compile>
     <Compile Include="Datos\AccesoDatos.cs" />
     <Compile Include="Datos\DaoUsers.cs" />
+    <Compile Include="Datos\InformeBLL.cs" />
+    <Compile Include="Datos\InformeDAL.cs" />
     <Compile Include="Entidades\Persona.cs" />
     <Compile Include="Entidades\Rol.cs" />
     <Compile Include="Entidades\Usuario.cs" />
