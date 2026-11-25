@@ -67,8 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ABMLMedicos.aspx" />
-    <Content Include="ABMLPacientes.aspx" />
+    <Content Include="Vistas\ABMLMedicos.aspx" />
+    <Content Include="Vistas\ABMLPacientes.aspx" />
     <Content Include="Css\ABMLPacientes.css" />
     <Content Include="Css\ABMLMedicos.css" />
     <Content Include="Css\Site.css" />
@@ -80,25 +80,32 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ABMLMedicos.aspx.cs">
+    <Compile Include="Entidades\Localidad.cs" />
+    <Compile Include="Entidades\Provincia.cs" />
+    <Compile Include="Vistas\ABMLMedicos.aspx.cs">
+      <DependentUpon>ABMLMedicos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\ABMLMedicos.aspx.designer.cs">
       <DependentUpon>ABMLMedicos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ABMLMedicos.aspx.designer.cs">
-      <DependentUpon>ABMLMedicos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ABMLPacientes.aspx.cs">
+    <Compile Include="Vistas\ABMLPacientes.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>ABMLPacientes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ABMLPacientes.aspx.designer.cs">
+    <Compile Include="Vistas\ABMLPacientes.aspx.designer.cs">
       <DependentUpon>ABMLPacientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Datos\AccesoDatos.cs" />
+    <Compile Include="Datos\DaoMedicos.cs" />
     <Compile Include="Datos\DaoUsers.cs" />
+    <Compile Include="Entidades\Especialidad.cs" />
+    <Compile Include="Entidades\HorarioMedico.cs" />
+    <Compile Include="Entidades\Medico.cs" />
     <Compile Include="Entidades\Persona.cs" />
     <Compile Include="Entidades\Rol.cs" />
     <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Negocio\NegocioMedico.cs" />
     <Compile Include="Negocio\NegocioUser.cs" />
     <Compile Include="PageBase.cs">
       <SubType>ASPXCodeBehind</SubType>

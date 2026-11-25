@@ -23,7 +23,7 @@
 
         <nav>
             <asp:HyperLink ID="hlPacientes" runat="server" NavigateUrl="~/ABMLPacientes.aspx">Gestión de Pacientes</asp:HyperLink>
-            <asp:HyperLink ID="hlMedicos" runat="server" NavigateUrl="~/ABMLMedicos.aspx">Gestión de Médicos</asp:HyperLink>
+            <asp:HyperLink ID="hlMedicos" runat="server" NavigateUrl="~/Vistas/ABMLMedicos.aspx">Gestión de Médicos</asp:HyperLink>
             <asp:HyperLink ID="hlTurnos" runat="server" NavigateUrl="~/AsignarTurnos.aspx">Asignación de Turnos</asp:HyperLink>
             <asp:HyperLink ID="hlListadoTurnos" runat="server" NavigateUrl="~/ListadoTurnos.aspx">Listado de Turnos</asp:HyperLink>
             <asp:HyperLink ID="hlInformes" runat="server" NavigateUrl="~/Informes.aspx">Reportes e Informes</asp:HyperLink>

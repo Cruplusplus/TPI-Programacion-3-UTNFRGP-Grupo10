@@ -27,9 +27,9 @@ namespace TPINT_GRUPO_10_PR3.Vistas
                 int rol = negocioUser.obtenerRolPorNombre(nombreUsuario);
 
                 if (rol == 0)
-                    Response.Redirect("~/Site.master");   // admin
+                    Response.Redirect("~/Vistas/ABMLMedicos.aspx");   // admin
                 else if (rol == 1)
-                    Response.Redirect("~/ABMLMedicos.aspx");   // médico
+                    Response.Redirect("~/ABMLPacientes.aspx");   // médico
                 else if (rol == 2)
                     Response.Redirect("~/ABMLPacientes.aspx"); // paciente
                 else
