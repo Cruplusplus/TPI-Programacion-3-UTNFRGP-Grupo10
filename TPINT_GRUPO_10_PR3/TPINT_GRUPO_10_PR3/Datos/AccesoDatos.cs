@@ -16,6 +16,7 @@ namespace TPINT_GRUPO_10_PR3.Datos
         private SqlDataReader _lector;
         private SqlTransaction _transaccion;
 
+        // Solo lectura
         public SqlDataReader Lector => _lector;
 
         private SqlConnection ObtenerConexion()
@@ -129,7 +130,7 @@ namespace TPINT_GRUPO_10_PR3.Datos
             }
         }
 
-        public void EjecutarLecture()
+        public void EjecutarLectura()
         {
             if (_transaccion == null)
             {

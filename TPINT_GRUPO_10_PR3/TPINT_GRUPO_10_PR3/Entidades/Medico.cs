@@ -30,7 +30,7 @@ namespace TPINT_GRUPO_10_PR3.Entidades
         // Propiedades auxiliares para mostrar en el GridView
         public string NombreEspecialidad => Especialidad != null ? Especialidad.NombreEspecialidad : string.Empty;
 
-        public string DiasAtencionResumen
+        public string DiasAtencion
         {
             get
             {
@@ -39,7 +39,7 @@ namespace TPINT_GRUPO_10_PR3.Entidades
             }
         }
 
-        public string HorarioResumen
+        public string Horario
         {
             get
             {

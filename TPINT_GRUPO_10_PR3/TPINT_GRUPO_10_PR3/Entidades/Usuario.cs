@@ -12,5 +12,10 @@ namespace TPINT_GRUPO_10_PR3.Entidades
         public string Password { get; set; }
         public Rol Rol { get; set; }
         public bool Estado { get; set; }
+
+        public Usuario()
+        {
+            Rol = new Rol();
+        }
     }
 }

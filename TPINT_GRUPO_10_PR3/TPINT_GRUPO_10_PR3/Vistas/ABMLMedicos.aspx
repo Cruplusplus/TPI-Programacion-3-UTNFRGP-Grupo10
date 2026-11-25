@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="ABML de Médicos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ABMLMedicos.aspx.cs" Inherits="TPINT_GRUPO_10_PR3.Medicos" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="Css/ABMLMedicos.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/ABMLMedicos.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -9,15 +9,16 @@
         <h2>ABML de Médicos</h2>
         <hr />
 
-        <!-- FORMULARIO DE CARGA / EDICIÓN -->
+        <!-- FORMULARIO DE CARGA / EDICION -->
         <section class="card">
-            <h3><asp:Label ID="lblTituloForm" runat="server" Text="Datos del Médico"></asp:Label></h3>
+            <h3>
+                <asp:Label ID="lblTituloForm" runat="server" Text="Datos del Médico"></asp:Label></h3>
 
             <div class="form-grid">
-                <!-- Identificación y Datos Personales -->
+                <!-- Identificacion y Datos Personales -->
                 <div class="form-group">
                     <label>Legajo:</label>
-                    <asp:TextBox ID="txtLegajo" runat="server" CssClass="form-control" MaxLength="10" placeholder="Ej: MED001"></asp:TextBox>
+                    <asp:TextBox ID="txtLegajo" runat="server" CssClass="form-control" MaxLength="15" placeholder="Ej: MED001"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvLegajo" runat="server" ControlToValidate="txtLegajo" ErrorMessage="Campo obligatorio" ForeColor="Red" ValidationGroup="GrupoMedico">*</asp:RequiredFieldValidator>
                 </div>
 
@@ -43,9 +44,9 @@
                     <label>Sexo:</label>
                     <asp:DropDownList ID="ddlSexo" runat="server" CssClass="form-control">
                         <asp:ListItem Text="-- Seleccione --" Value="" />
-                        <asp:ListItem Text="Masculino" Value="Masculino" />
-                        <asp:ListItem Text="Femenino" Value="Femenino" />
-                        <asp:ListItem Text="Otro" Value="Otro" />
+                        <asp:ListItem Text="Masculino" Value="M" />
+                        <asp:ListItem Text="Femenino" Value="F" />
+                        <asp:ListItem Text="Otro" Value="X" />
                     </asp:DropDownList>
                     <asp:RequiredFieldValidator ID="rfvSexo" runat="server" ControlToValidate="ddlSexo" InitialValue="" ErrorMessage="Campo obligatorio" ForeColor="Red" ValidationGroup="GrupoMedico">*</asp:RequiredFieldValidator>
                 </div>
@@ -101,18 +102,19 @@
                 </div>
             </div>
 
-            <!-- Días y Horarios de Atención -->
+            <!-- Dias y Horarios de Atencion -->
             <div class="horarios-section">
                 <h4>Días y Horarios de Atención</h4>
                 <div class="form-group">
                     <label>Días de Atención:</label>
                     <asp:CheckBoxList ID="cblDiasAtencion" runat="server" RepeatDirection="Horizontal" CssClass="dias-checkboxlist">
-                        <asp:ListItem Text="Lunes" Value="Lunes" />
-                        <asp:ListItem Text="Martes" Value="Martes" />
-                        <asp:ListItem Text="Miércoles" Value="Miercoles" />
-                        <asp:ListItem Text="Jueves" Value="Jueves" />
-                        <asp:ListItem Text="Viernes" Value="Viernes" />
-                        <asp:ListItem Text="Sábado" Value="Sabado" />
+                        <asp:ListItem Text="Domingo" Value="0" />
+                        <asp:ListItem Text="Lunes" Value="1" />
+                        <asp:ListItem Text="Martes" Value="2" />
+                        <asp:ListItem Text="Miércoles" Value="3" />
+                        <asp:ListItem Text="Jueves" Value="4" />
+                        <asp:ListItem Text="Viernes" Value="5" />
+                        <asp:ListItem Text="Sábado" Value="6" />
                     </asp:CheckBoxList>
                 </div>
 
@@ -183,24 +185,40 @@
             <h3>Listado de Médicos Activos</h3>
 
             <div class="filter-bar">
-                <asp:TextBox ID="txtFiltro" runat="server" CssClass="form-control" Placeholder="Buscar por apellido o nombre..."></asp:TextBox>
+                <asp:TextBox ID="txtFiltro" runat="server" CssClass="form-control" Placeholder="Buscar por apellido, nombre o legajo..."></asp:TextBox>
+                <asp:DropDownList ID="ddlFiltroEspecialidad" runat="server" CssClass="form-control">
+                </asp:DropDownList>
+
+                <asp:DropDownList ID="ddlFiltroDia" runat="server" CssClass="form-control">
+                    <asp:ListItem Text="-- Todos los días --" Value="-1" />
+                    <asp:ListItem Text="Domingo" Value="0" />
+                    <asp:ListItem Text="Lunes" Value="1" />
+                    <asp:ListItem Text="Martes" Value="2" />
+                    <asp:ListItem Text="Miércoles" Value="3" />
+                    <asp:ListItem Text="Jueves" Value="4" />
+                    <asp:ListItem Text="Viernes" Value="5" />
+                    <asp:ListItem Text="Sábado" Value="6" />
+                </asp:DropDownList>
+
                 <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar (LIKE)" CssClass="btn btn-primary" CausesValidation="false" OnClick="btnFiltrar_Click" />
                 <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar Todos" CssClass="btn btn-secondary" CausesValidation="false" OnClick="btnMostrarTodos_Click" />
             </div>
 
             <div class="table-responsive">
                 <asp:GridView ID="GridViewMedicos" runat="server" AutoGenerateColumns="False" AllowPaging="True" PageSize="5"
-                    CssClass="grid-medicos" OnPageIndexChanging="GridViewMedicos_PageIndexChanging" OnRowCommand="GridViewMedicos_RowCommand" DataKeyNames="Legajo">
+                    CssClass="grid-medicos" OnPageIndexChanging="GridViewMedicos_PageIndexChanging" OnRowCommand="GridViewMedicos_RowCommand"
+                    OnRowDataBound="GridViewMedicos_RowDataBound" DataKeyNames="IdPersona">
                     <Columns>
                         <asp:BoundField DataField="Legajo" HeaderText="Legajo" />
-                        <asp:BoundField DataField="DNI" HeaderText="DNI" />
+                        <asp:BoundField DataField="Dni" HeaderText="DNI" />
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
                         <asp:BoundField DataField="Apellido" HeaderText="Apellido" />
                         <asp:BoundField DataField="Especialidad" HeaderText="Especialidad" />
                         <asp:BoundField DataField="DiasAtencion" HeaderText="Días de Atención" />
                         <asp:BoundField DataField="Horario" HeaderText="Horario" />
-                        <asp:BoundField DataField="Correo" HeaderText="Correo" />
+                        <asp:BoundField DataField="CorreoElectronico" HeaderText="Correo" />
                         <asp:BoundField DataField="Telefono" HeaderText="Teléfono" />
+                        <asp:ButtonField ButtonType="Button" CommandName="EventoEditar" Text="Editar" ControlStyle-CssClass="btn btn-secondary" />
                         <asp:ButtonField ButtonType="Button" CommandName="EventoEliminar" Text="Eliminar (Baja Lógica)" ControlStyle-CssClass="btn btn-delete" />
                     </Columns>
                     <PagerStyle CssClass="grid-pager" />
