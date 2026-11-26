@@ -1,254 +1,227 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web.UI.WebControls;
+using TPINT_GRUPO_10_PR3.Entidades;
+using TPINT_GRUPO_10_PR3.Negocio;
 
 namespace TPINT_GRUPO_10_PR3
 {
     public partial class ABMLPacientes : PageBase
     {
-        [Serializable]
-        public class PacienteVisual
-        {
-            public string DNI { get; set; }
-            public string Nombre { get; set; }
-            public string Apellido { get; set; }
-            public string Sexo { get; set; }
-            public string Nacionalidad { get; set; }
-            public DateTime FechaNacimiento { get; set; }
-            public string Direccion { get; set; }
-            public string Provincia { get; set; }
-            public string Localidad { get; set; }
-            public string Email { get; set; }
-            public string Telefono { get; set; }
-        }
-
-        private List<PacienteVisual> Pacientes
-        {
-            get
-            {
-                if (Session["PacientesVisual"] == null)
-                {
-                    Session["PacientesVisual"] = new List<PacienteVisual>();
-                }
-                return (List<PacienteVisual>)Session["PacientesVisual"];
-            }
-        }
+        private readonly PacienteBLL pacBll = new PacienteBLL();
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidarRol(0);
+
             if (!IsPostBack)
             {
                 CargarProvincias();
-                CargarLocalidades("");
                 CargarGrilla();
             }
         }
 
         private void CargarProvincias()
         {
-            string[] provincias = { "Buenos Aires", "CABA", "Córdoba", "Santa Fe" };
+            var provincias = pacBll.ListarProvincias();
+
             ddlProvincia.Items.Clear();
+            ddlProvincia.DataSource = provincias;
+            ddlProvincia.DataTextField = "NombreProvincia";
+            ddlProvincia.DataValueField = "IdProvincia";
+            ddlProvincia.DataBind();
+            ddlProvincia.Items.Insert(0, new ListItem("-- Seleccione --", ""));
+
+            ddlLocalidad.Items.Clear();
+            ddlLocalidad.Items.Insert(0, new ListItem("-- Seleccione provincia --", ""));
+
             ddlFiltroProvincia.Items.Clear();
-
-            ddlProvincia.Items.Add(new ListItem("-- Seleccione --", ""));
-            ddlFiltroProvincia.Items.Add(new ListItem("Todas", ""));
-
-            foreach (var p in provincias)
-            {
-                ddlProvincia.Items.Add(new ListItem(p, p));
-                ddlFiltroProvincia.Items.Add(new ListItem(p, p));
-            }
+            ddlFiltroProvincia.DataSource = provincias;
+            ddlFiltroProvincia.DataTextField = "NombreProvincia";
+            ddlFiltroProvincia.DataValueField = "IdProvincia";
+            ddlFiltroProvincia.DataBind();
+            ddlFiltroProvincia.Items.Insert(0, new ListItem("Todas", "0"));
         }
 
-        private void CargarLocalidades(string provincia)
+        private void CargarLocalidades(int idProvincia)
         {
             ddlLocalidad.Items.Clear();
-            ddlLocalidad.Items.Add(new ListItem("-- Seleccione --", ""));
-
-            if (provincia == "Buenos Aires")
-            {
-                ddlLocalidad.Items.Add("General Pacheco");
-                ddlLocalidad.Items.Add("San Miguel");
-                ddlLocalidad.Items.Add("Grand Bourg");
-            }
-            else if (provincia == "CABA")
-            {
-                ddlLocalidad.Items.Add("Almagro");
-                ddlLocalidad.Items.Add("Belgrano");
-            }
-            else if (provincia == "Córdoba")
-            {
-                ddlLocalidad.Items.Add("Córdoba Capital");
-                ddlLocalidad.Items.Add("Villa Carlos Paz");
-            }
-            else if (provincia == "Santa Fe")
-            {
-                ddlLocalidad.Items.Add("Rosario");
-                ddlLocalidad.Items.Add("Santa Fe Capital");
-            }
+            ddlLocalidad.DataSource = pacBll.ListarLocalidades(idProvincia);
+            ddlLocalidad.DataTextField = "NombreLocalidad";
+            ddlLocalidad.DataValueField = "IdLocalidad";
+            ddlLocalidad.DataBind();
+            ddlLocalidad.Items.Insert(0, new ListItem("-- Seleccione --", ""));
         }
 
         protected void ddlProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CargarLocalidades(ddlProvincia.SelectedValue);
+            if (!string.IsNullOrEmpty(ddlProvincia.SelectedValue))
+            {
+                int idProvincia = int.Parse(ddlProvincia.SelectedValue);
+                CargarLocalidades(idProvincia);
+            }
+            else
+            {
+                ddlLocalidad.Items.Clear();
+                ddlLocalidad.Items.Insert(0, new ListItem("-- Seleccione provincia --", ""));
+            }
         }
 
         private void CargarGrilla()
         {
-            IEnumerable<PacienteVisual> query = Pacientes;
+            string texto = txtBuscar.Text.Trim();
+            int idProvincia = !string.IsNullOrEmpty(ddlFiltroProvincia.SelectedValue)
+                ? int.Parse(ddlFiltroProvincia.SelectedValue)
+                : 0;
+            string sexo = ConvertirSexoACharString(ddlFiltroSexo.SelectedValue);
 
-            string filtroTexto = txtBuscar.Text.Trim().ToLower();
-            if (!string.IsNullOrEmpty(filtroTexto))
-            {
-                query = query.Where(p => p.DNI.Contains(filtroTexto) ||
-                                         p.Nombre.ToLower().Contains(filtroTexto) ||
-                                         p.Apellido.ToLower().Contains(filtroTexto));
-            }
-
-            if (!string.IsNullOrEmpty(ddlFiltroProvincia.SelectedValue))
-                query = query.Where(p => p.Provincia == ddlFiltroProvincia.SelectedValue);
-
-            if (!string.IsNullOrEmpty(ddlFiltroSexo.SelectedValue))
-                query = query.Where(p => p.Sexo == ddlFiltroSexo.SelectedValue);
-
-            gvPacientes.DataSource = query.ToList();
+            gvPacientes.DataSource = pacBll.Listar(texto, idProvincia, sexo);
             gvPacientes.DataBind();
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtDni.Text) || string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtApellido.Text))
+            try
             {
-                lblMensaje.Text = "Complete al menos DNI, Nombre y Apellido.";
+                Paciente pac = ArmarObjetoDesdeFormulario();
+
+                if (ViewState["IdPacienteEditar"] == null)
+                {
+                    pacBll.Agregar(pac);
+                    lblMensaje.Text = "Paciente registrado correctamente.";
+                }
+                else
+                {
+                    pac.IdPersona = (int)ViewState["IdPacienteEditar"];
+                    pacBll.Modificar(pac);
+                    lblMensaje.Text = "Paciente modificado correctamente.";
+                }
+
+                lblMensaje.ForeColor = System.Drawing.Color.Green;
+                LimpiarFormulario();
+                CargarGrilla();
+            }
+            catch (Exception ex)
+            {
+                lblMensaje.Text = "Error: " + ex.Message;
                 lblMensaje.ForeColor = System.Drawing.Color.Red;
-                return;
             }
+        }
 
-            DateTime fechaNac;
-            DateTime.TryParse(txtFechaNac.Text, out fechaNac);
+        private Paciente ArmarObjetoDesdeFormulario()
+        {
+            if (string.IsNullOrEmpty(ddlSexo.SelectedValue))
+                throw new Exception("Debe seleccionar el sexo del paciente.");
 
-            if (ViewState["EditandoDNI"] == null)
-            {
-                if (Pacientes.Any(p => p.DNI == txtDni.Text.Trim()))
-                {
-                    lblMensaje.Text = "Ya existe un paciente con ese DNI.";
-                    lblMensaje.ForeColor = System.Drawing.Color.Red;
-                    return;
-                }
+            if (string.IsNullOrEmpty(txtFechaNac.Text))
+                throw new Exception("Debe ingresar la fecha de nacimiento.");
 
-                Pacientes.Insert(0, new PacienteVisual
-                {
-                    DNI = txtDni.Text.Trim(),
-                    Nombre = txtNombre.Text.Trim(),
-                    Apellido = txtApellido.Text.Trim(),
-                    Sexo = ddlSexo.SelectedValue,
-                    Nacionalidad = txtNacionalidad.Text.Trim(),
-                    FechaNacimiento = fechaNac == DateTime.MinValue ? DateTime.Today : fechaNac,
-                    Direccion = txtDireccion.Text.Trim(),
-                    Provincia = ddlProvincia.SelectedValue,
-                    Localidad = ddlLocalidad.SelectedValue,
-                    Email = txtEmail.Text.Trim(),
-                    Telefono = txtTelefono.Text.Trim()
-                });
-                lblMensaje.Text = "Paciente agregado correctamente.";
-            }
-            else
-            {
-                string dni = ViewState["EditandoDNI"].ToString();
-                var pac = Pacientes.FirstOrDefault(p => p.DNI == dni);
-                if (pac != null)
-                {
-                    pac.Nombre = txtNombre.Text.Trim();
-                    pac.Apellido = txtApellido.Text.Trim();
-                    pac.Sexo = ddlSexo.SelectedValue;
-                    pac.Nacionalidad = txtNacionalidad.Text.Trim();
-                    if (fechaNac != DateTime.MinValue) pac.FechaNacimiento = fechaNac;
-                    pac.Direccion = txtDireccion.Text.Trim();
-                    pac.Provincia = ddlProvincia.SelectedValue;
-                    pac.Localidad = ddlLocalidad.SelectedValue;
-                    pac.Email = txtEmail.Text.Trim();
-                    pac.Telefono = txtTelefono.Text.Trim();
-                }
-                lblMensaje.Text = "Paciente modificado correctamente.";
-            }
+            if (string.IsNullOrEmpty(ddlLocalidad.SelectedValue))
+                throw new Exception("Debe seleccionar una provincia y localidad.");
 
-            lblMensaje.ForeColor = System.Drawing.Color.Green;
-            LimpiarFormulario();
-            CargarGrilla();
+            Paciente pac = new Paciente();
+            pac.Dni = txtDni.Text.Trim();
+            pac.Nombre = txtNombre.Text.Trim();
+            pac.Apellido = txtApellido.Text.Trim();
+            pac.Sexo = ConvertirSexoAChar(ddlSexo.SelectedValue);
+            pac.Nacionalidad = txtNacionalidad.Text.Trim();
+            pac.FechaNacimiento = DateTime.Parse(txtFechaNac.Text);
+            pac.Direccion = txtDireccion.Text.Trim();
+            pac.IdLocalidad = int.Parse(ddlLocalidad.SelectedValue);
+            pac.CorreoElectronico = txtEmail.Text.Trim();
+            pac.Telefono = txtTelefono.Text.Trim();
+            pac.Estado = true;
+            pac.EstadoPaciente = true;
+
+            return pac;
         }
 
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
             LimpiarFormulario();
-            lblMensaje.Text = "";
+            lblMensaje.Text = string.Empty;
         }
 
         private void LimpiarFormulario()
         {
-            ViewState["EditandoDNI"] = null;
-            txtDni.Text = "";
-            txtDni.ReadOnly = false;
-            txtNombre.Text = "";
-            txtApellido.Text = "";
-            ddlSexo.SelectedIndex = 0;
-            txtNacionalidad.Text = "";
-            txtFechaNac.Text = "";
-            txtDireccion.Text = "";
-            ddlProvincia.SelectedIndex = 0;
-            CargarLocalidades("");
-            txtEmail.Text = "";
-            txtTelefono.Text = "";
+            ViewState["IdPacienteEditar"] = null;
             lblTituloForm.Text = "Alta de Paciente";
             btnGuardar.Text = "Guardar";
+            btnGuardar.OnClientClick = string.Empty;
+
+            txtDni.Text = string.Empty;
+            txtDni.Enabled = true;
+
+            txtNombre.Text = string.Empty;
+            txtApellido.Text = string.Empty;
+            if (ddlSexo.Items.Count > 0) ddlSexo.SelectedIndex = 0;
+            txtNacionalidad.Text = string.Empty;
+            txtFechaNac.Text = string.Empty;
+            txtDireccion.Text = string.Empty;
+
+            if (ddlProvincia.Items.Count > 0) ddlProvincia.SelectedIndex = 0;
+            ddlLocalidad.Items.Clear();
+            ddlLocalidad.Items.Insert(0, new ListItem("-- Seleccione provincia --", ""));
+
+            txtEmail.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
         }
 
         protected void gvPacientes_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            string dni = e.CommandArgument.ToString();
+            if (e.CommandName != "Modificar" && e.CommandName != "Eliminar")
+                return;
 
-            if (e.CommandName == "Modificar")
+            try
             {
-                var pac = Pacientes.FirstOrDefault(p => p.DNI == dni);
-                if (pac != null)
-                {
-                    ViewState["EditandoDNI"] = pac.DNI;
-                    txtDni.Text = pac.DNI;
-                    txtDni.ReadOnly = true;
-                    txtNombre.Text = pac.Nombre;
-                    txtApellido.Text = pac.Apellido;
-                    ddlSexo.SelectedValue = pac.Sexo;
-                    txtNacionalidad.Text = pac.Nacionalidad;
-                    txtFechaNac.Text = pac.FechaNacimiento.ToString("yyyy-MM-dd");
-                    txtDireccion.Text = pac.Direccion;
-                    ddlProvincia.SelectedValue = pac.Provincia;
-                    CargarLocalidades(pac.Provincia);
-                    ddlLocalidad.SelectedValue = pac.Localidad;
-                    txtEmail.Text = pac.Email;
-                    txtTelefono.Text = pac.Telefono;
+                string dni = e.CommandArgument.ToString();
 
-                    lblTituloForm.Text = "Modificar Paciente (DNI: " + pac.DNI + ")";
-                    btnGuardar.Text = "Actualizar";
-                    lblMensaje.Text = "";
+                if (e.CommandName == "Modificar")
+                {
+                    CargarPacienteParaEdicion(dni);
                 }
-            }
-            else if (e.CommandName == "Eliminar")
-            {
-                var pac = Pacientes.FirstOrDefault(p => p.DNI == dni);
-                if (pac != null)
+                else if (e.CommandName == "Eliminar")
                 {
-                    Pacientes.Remove(pac);
-                    lblMensaje.Text = "Paciente eliminado.";
+                    pacBll.EliminarPorDni(dni);
+                    lblMensaje.Text = "Paciente dado de baja correctamente.";
                     lblMensaje.ForeColor = System.Drawing.Color.Green;
+                    LimpiarFormulario();
                     CargarGrilla();
                 }
             }
+            catch (Exception ex)
+            {
+                lblMensaje.Text = "Error: " + ex.Message;
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
+            }
         }
 
-        protected void gvPacientes_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        private void CargarPacienteParaEdicion(string dni)
         {
-            gvPacientes.PageIndex = e.NewPageIndex;
-            CargarGrilla();
+            Paciente pac = pacBll.ObtenerPorDni(dni);
+            if (pac == null) return;
+
+            ViewState["IdPacienteEditar"] = pac.IdPersona;
+            lblTituloForm.Text = "Modificación de Paciente - DNI " + pac.Dni;
+            btnGuardar.Text = "Guardar Cambios";
+            btnGuardar.OnClientClick = "return confirm('¿Está seguro que desea guardar los cambios realizados?');";
+
+            txtDni.Text = pac.Dni;
+            txtDni.Enabled = false;
+
+            txtNombre.Text = pac.Nombre;
+            txtApellido.Text = pac.Apellido;
+            ddlSexo.SelectedValue = ConvertirCharASexoDropdown(pac.Sexo);
+            txtNacionalidad.Text = pac.Nacionalidad;
+            txtFechaNac.Text = pac.FechaNacimiento.ToString("yyyy-MM-dd");
+            txtDireccion.Text = pac.Direccion;
+
+            ddlProvincia.SelectedValue = pac.ProvinciaObj.IdProvincia.ToString();
+            CargarLocalidades(pac.ProvinciaObj.IdProvincia);
+            ddlLocalidad.SelectedValue = pac.IdLocalidad.ToString();
+
+            txtEmail.Text = pac.CorreoElectronico;
+            txtTelefono.Text = pac.Telefono;
+            lblMensaje.Text = string.Empty;
         }
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
@@ -259,11 +232,48 @@ namespace TPINT_GRUPO_10_PR3
 
         protected void btnLimpiarFiltro_Click(object sender, EventArgs e)
         {
-            txtBuscar.Text = "";
-            ddlFiltroProvincia.SelectedIndex = 0;
-            ddlFiltroSexo.SelectedIndex = 0;
+            txtBuscar.Text = string.Empty;
+            if (ddlFiltroProvincia.Items.Count > 0) ddlFiltroProvincia.SelectedIndex = 0;
+            if (ddlFiltroSexo.Items.Count > 0) ddlFiltroSexo.SelectedIndex = 0;
             gvPacientes.PageIndex = 0;
             CargarGrilla();
+        }
+
+        protected void gvPacientes_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvPacientes.PageIndex = e.NewPageIndex;
+            CargarGrilla();
+        }
+
+        private char ConvertirSexoAChar(string valorDropdown)
+        {
+            switch (valorDropdown)
+            {
+                case "Masculino":
+                case "M":
+                    return 'M';
+                case "Femenino":
+                case "F":
+                    return 'F';
+                default:
+                    return 'X';
+            }
+        }
+
+        private string ConvertirSexoACharString(string valorDropdown)
+        {
+            if (string.IsNullOrEmpty(valorDropdown)) return string.Empty;
+            return ConvertirSexoAChar(valorDropdown).ToString();
+        }
+
+        private string ConvertirCharASexoDropdown(char sexo)
+        {
+            switch (sexo)
+            {
+                case 'M': return "Masculino";
+                case 'F': return "Femenino";
+                default: return "Otro";
+            }
         }
     }
 }

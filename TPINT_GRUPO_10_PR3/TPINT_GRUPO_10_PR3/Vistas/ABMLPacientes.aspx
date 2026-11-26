@@ -94,8 +94,8 @@
                         <asp:ListItem Text="Otro" Value="Otro" />
                     </asp:DropDownList>
                 </div>
-                <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" CssClass="btn btn-primary" OnClick="btnFiltrar_Click" />
-                <asp:Button ID="btnLimpiarFiltro" runat="server" Text="Limpiar" CssClass="btn btn-secondary" OnClick="btnLimpiarFiltro_Click" />
+                <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" CssClass="btn btn-primary" OnClick="btnFiltrar_Click" CausesValidation ="false" />
+                <asp:Button ID="btnLimpiarFiltro" runat="server" Text="Limpiar" CssClass="btn btn-secondary" OnClick="btnLimpiarFiltro_Click" CausesValidation ="false" />
             </div>
 
             <div class="table-responsive">
