@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TPINT_GRUPO_10_PR3.Entidades;
 
 namespace TPINT_GRUPO_10_PR3.Vistas
 {

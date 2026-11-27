@@ -6,7 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Recuperar contraseña</title>
-    <link href="~/Css/login.css" rel="stylesheet" type="text/css" />
+    <link href="~/Css/Recovery.css" rel="stylesheet" type="text/css" runat="server" />
 </head>
 <body>
     <form id="form1" runat="server">
