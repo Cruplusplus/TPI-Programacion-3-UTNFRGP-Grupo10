@@ -18,6 +18,15 @@ namespace TPINT_GRUPO_10_PR3
                 CargarProvincias();
                 CargarGrilla();
             }
+            if (Session["NombreUser"] != null)
+            {
+                string nombreUsuario = Session["NombreUser"].ToString();
+                lblUsuarioLogueado.Text = nombreUsuario;
+            }
+            else
+            {
+                Response.Redirect("~/Vistas/Login.aspx");
+            }
         }
 
         private void CargarProvincias()
