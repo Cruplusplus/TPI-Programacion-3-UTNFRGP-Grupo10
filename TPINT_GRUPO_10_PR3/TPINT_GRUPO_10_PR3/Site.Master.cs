@@ -12,18 +12,14 @@ namespace TPINT_GRUPO_10_PR3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (Session["NombreUser"] != null)
             {
-                Usuario usuarioActual = Session["UsuarioLogueado"] as Usuario;
-
-                if (usuarioActual != null)
-                {
-                    lblUsuarioLogueado.Text = usuarioActual.NombreUsuario;
-                }
-                else
-                {
-                    lblUsuarioLogueado.Text = "Invitado";
-                }
+                string nombreUsuario = Session["NombreUser"].ToString();
+                lblUsuarioLogueado.Text = nombreUsuario;
+            }
+            else
+            {
+                Response.Redirect("~/Vistas/Login.aspx");
             }
         }
 

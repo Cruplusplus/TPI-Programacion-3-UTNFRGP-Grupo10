@@ -1,30 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using TPINT_GRUPO_10_PR3.Entidades;
+using TPINT_GRUPO_10_PR3.Negocio;
 
 namespace TPINT_GRUPO_10_PR3
 {
     public class PageBase : Page
     {
-        public Usuario UsuarioLogueado => Session["UsuarioLogueado"] as Usuario;
+        public string NombreUsuarioLogueado
+        {
+            get { return Session["NombreUser"] as string; }
+        }
+
+        public int RolUsuarioLogueado
+        {
+            get
+            {
+                if (Session["IdRol"] == null && !string.IsNullOrEmpty(NombreUsuarioLogueado))
+                {
+                    NegocioUser negUser = new NegocioUser();
+                    Session["IdRol"] = negUser.obtenerRolPorNombre(NombreUsuarioLogueado);
+                }
+                return Session["IdRol"] != null ? (int)Session["IdRol"] : -1;
+            }
+        }
 
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
 
-            if (UsuarioLogueado == null)
+            // Si no paso por el Login, redirigimos al WebForm1 de Vistas
+            if (string.IsNullOrEmpty(NombreUsuarioLogueado))
             {
-                Session["UsuarioLogueado"] = new Usuario
-                {
-                    IdUsuario = 1,
-                    NombreUsuario = "Admin_Prototipo",
-                    Rol = new Rol { IdRol = 1, Nombre = "Administrador" }
-                };
+                Response.Redirect("~/Vistas/Login.aspx", true);
             }
         }
 
+        protected void ValidarRol(int idRolPermitido)
+        {
+            if (RolUsuarioLogueado != idRolPermitido)
+            {
+                Response.Redirect("~/Vistas/Login.aspx", true);
+            }
+        }
     }
 }

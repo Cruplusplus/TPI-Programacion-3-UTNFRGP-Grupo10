@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="ABML de Pacientes" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ABMLPacientes.aspx.cs" Inherits="TPINT_GRUPO_10_PR3.ABMLPacientes" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="Css/ABMLPacientes.css" rel="stylesheet" type="text/css" runat="server" />
+    <link href="../Css/ABMLPacientes.css" rel="stylesheet" type="text/css" runat="server" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -94,8 +94,8 @@
                         <asp:ListItem Text="Otro" Value="Otro" />
                     </asp:DropDownList>
                 </div>
-                <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" CssClass="btn btn-primary" OnClick="btnFiltrar_Click" />
-                <asp:Button ID="btnLimpiarFiltro" runat="server" Text="Limpiar" CssClass="btn btn-secondary" OnClick="btnLimpiarFiltro_Click" />
+                <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" CssClass="btn btn-primary" OnClick="btnFiltrar_Click" CausesValidation ="false" />
+                <asp:Button ID="btnLimpiarFiltro" runat="server" Text="Limpiar" CssClass="btn btn-secondary" OnClick="btnLimpiarFiltro_Click" CausesValidation ="false" />
             </div>
 
             <div class="table-responsive">
