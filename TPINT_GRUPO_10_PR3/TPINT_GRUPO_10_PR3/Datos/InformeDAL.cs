@@ -18,12 +18,16 @@ namespace TPINT_GRUPO_10_PR3.Datos
                 WITH Totales AS (
                     SELECT COUNT(*) AS TotalTurnos
                     FROM Turno
-                    WHERE Estado = 1
-                      AND Fecha >= @FechaDesde
-                      AND Fecha <= @FechaHasta
+                    WHERE EstadoTurno = 1
+                      AND FechaTurno >= @FechaDesde
+                      AND FechaTurno <= @FechaHasta
                 )
                 SELECT 
-                    ISNULL(t.Asistencia, 'Pendiente') AS Asistencia,
+                    CASE 
+                        WHEN t.Asistencia = 1 THEN 'Presente'
+                        WHEN t.Asistencia = 0 THEN 'Ausente'
+                        ELSE 'Pendiente'
+                    END AS Asistencia,
                     COUNT(*) AS CantidadTurnos,
                     CASE 
                         WHEN tot.TotalTurnos > 0 
@@ -32,10 +36,16 @@ namespace TPINT_GRUPO_10_PR3.Datos
                     END AS Porcentaje
                 FROM Turno t
                 CROSS JOIN Totales tot
-                WHERE t.Estado = 1
-                  AND t.Fecha >= @FechaDesde
-                  AND t.Fecha <= @FechaHasta
-                GROUP BY ISNULL(t.Asistencia, 'Pendiente'), tot.TotalTurnos
+                WHERE t.EstadoTurno = 1
+                  AND t.FechaTurno >= @FechaDesde
+                  AND t.FechaTurno <= @FechaHasta
+                GROUP BY 
+                    CASE 
+                        WHEN t.Asistencia = 1 THEN 'Presente'
+                        WHEN t.Asistencia = 0 THEN 'Ausente'
+                        ELSE 'Pendiente'
+                    END,
+                    tot.TotalTurnos
                 ORDER BY CantidadTurnos DESC;";
 
             SqlParameter[] parametros =
@@ -52,16 +62,16 @@ namespace TPINT_GRUPO_10_PR3.Datos
             string sql = @"
                 SELECT 
                     e.IdEspecialidad,
-                    e.Nombre AS Especialidad,
+                    e.NombreEspecialidad AS Especialidad,
                     COUNT(t.IdTurno) AS CantidadTurnos
                 FROM Especialidad e
-                LEFT JOIN Medico m ON m.IdEspecialidad = e.IdEspecialidad AND m.Estado = 1
-                LEFT JOIN Turno t ON t.IdMedico = m.IdPersona 
-                    AND t.Estado = 1
-                    AND t.Fecha >= @FechaDesde
-                    AND t.Fecha <= @FechaHasta
-                GROUP BY e.IdEspecialidad, e.Nombre
-                ORDER BY CantidadTurnos DESC, e.Nombre ASC;";
+                LEFT JOIN Medico m ON m.IdEspecialidad = e.IdEspecialidad AND m.EstadoMedico = 1
+                LEFT JOIN Turno t ON t.IdMedico = m.IdMedico 
+                    AND t.EstadoTurno = 1
+                    AND t.FechaTurno >= @FechaDesde
+                    AND t.FechaTurno <= @FechaHasta
+                GROUP BY e.IdEspecialidad, e.NombreEspecialidad
+                ORDER BY CantidadTurnos DESC, e.NombreEspecialidad ASC;";
 
             SqlParameter[] parametros =
             {
@@ -76,20 +86,20 @@ namespace TPINT_GRUPO_10_PR3.Datos
         {
             string sql = @"
                 SELECT 
-                    m.IdPersona AS IdMedico,
+                    m.IdMedico,
                     m.Legajo,
                     (p.Apellido + ', ' + p.Nombre) AS Medico,
-                    e.Nombre AS Especialidad,
+                    e.NombreEspecialidad AS Especialidad,
                     COUNT(t.IdTurno) AS CantidadTurnos
                 FROM Medico m
-                INNER JOIN Persona p ON p.IdPersona = m.IdPersona
+                INNER JOIN Persona p ON p.IdPersona = m.IdMedico
                 INNER JOIN Especialidad e ON e.IdEspecialidad = m.IdEspecialidad
-                LEFT JOIN Turno t ON t.IdMedico = m.IdPersona 
-                    AND t.Estado = 1
-                    AND t.Fecha >= @FechaDesde
-                    AND t.Fecha <= @FechaHasta
-                WHERE m.Estado = 1
-                GROUP BY m.IdPersona, m.Legajo, p.Apellido, p.Nombre, e.Nombre
+                LEFT JOIN Turno t ON t.IdMedico = m.IdMedico 
+                    AND t.EstadoTurno = 1
+                    AND t.FechaTurno >= @FechaDesde
+                    AND t.FechaTurno <= @FechaHasta
+                WHERE m.EstadoMedico = 1
+                GROUP BY m.IdMedico, m.Legajo, p.Apellido, p.Nombre, e.NombreEspecialidad
                 ORDER BY CantidadTurnos DESC, Medico ASC;";
 
             SqlParameter[] parametros =
