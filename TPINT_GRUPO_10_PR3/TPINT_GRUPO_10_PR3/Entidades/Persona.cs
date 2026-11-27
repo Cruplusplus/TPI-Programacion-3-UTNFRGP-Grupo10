@@ -11,17 +11,15 @@ namespace TPINT_GRUPO_10_PR3.Entidades
     {
         public int IdPersona { get; set; }
         public int IdLocalidad { get; set; }
-        public char dni { get; set; }
-        public char nombre { get; set; }
-        public char apellido { get; set; }
-        public char sexo { get; set; }
-        public char nacionalidad { get; set; }
-        public char fechaNacimiento { get; set; }
-        public char dirrecion { get; set; }
-        public char correElectronico { get; set; }
-        public char telefono { get; set; }
-        public bool estado { get; set; }
-
-
+        public string Dni { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public char Sexo { get; set; }
+        public string Nacionalidad { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+        public string Direccion { get; set; }
+        public string CorreoElectronico { get; set; }
+        public string Telefono { get; set; }
+        public bool Estado { get; set; }
     }
 }

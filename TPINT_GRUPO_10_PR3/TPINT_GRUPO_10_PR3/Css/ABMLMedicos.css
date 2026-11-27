@@ -168,7 +168,7 @@ span[id*="cv"] {
 .filter-bar {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
     margin-bottom: 16px;
     padding: 12px;
@@ -176,9 +176,15 @@ span[id*="cv"] {
     border-radius: 6px;
 }
 
-.filter-bar .form-control {
-    max-width: 300px;
-}
+    .filter-bar .form-control {
+        flex: 1 1 180px;
+        max-width: none;
+        min-width: 150px;
+    }
+
+    .filter-bar .btn {
+        white-space: nowrap;
+    }
 
 /* Grilla Responsiva */
 .table-responsive {
