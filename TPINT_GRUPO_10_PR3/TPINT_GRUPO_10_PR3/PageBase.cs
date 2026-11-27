@@ -26,6 +26,14 @@ namespace TPINT_GRUPO_10_PR3
 
         protected override void OnInit(EventArgs e)
         {
+            #if DEBUG
+            if (Session["NombreUser"] == null)
+            {
+                Session["NombreUser"] = "AdminTest";
+                Session["IdRol"] = 0;
+            }
+            #endif
+
             base.OnInit(e);
 
             // Si no paso por el Login, redirigimos al WebForm1 de Vistas

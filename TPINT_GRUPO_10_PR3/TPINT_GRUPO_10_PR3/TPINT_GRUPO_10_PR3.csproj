@@ -102,6 +102,8 @@
     <Compile Include="Datos\AccesoDatos.cs" />
     <Compile Include="Datos\DaoMedicos.cs" />
     <Compile Include="Datos\DaoUsers.cs" />
+    <Compile Include="Datos\InformeBLL.cs" />
+    <Compile Include="Datos\InformeDAL.cs" />
     <Compile Include="Entidades\Especialidad.cs" />
     <Compile Include="Entidades\HorarioMedico.cs" />
     <Compile Include="Entidades\Medico.cs" />

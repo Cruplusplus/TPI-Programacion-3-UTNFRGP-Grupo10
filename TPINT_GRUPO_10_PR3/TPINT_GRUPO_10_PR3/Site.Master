@@ -8,8 +8,8 @@
     <title>Clinica Medica - UTN</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-        <link href="Css/Variables.css" rel="stylesheet" type="text/css" runat="server" /> 
-        <link href="Css/Site.css" rel="stylesheet" type="text/css" runat="server" /> 
+        <link href="~/Css/Variables.css" rel="stylesheet" type="text/css" runat="server" /> 
+        <link href="~/Css/Site.css" rel="stylesheet" type="text/css" runat="server" /> 
 </head>
 <body>
     <form id="form1" runat="server">
