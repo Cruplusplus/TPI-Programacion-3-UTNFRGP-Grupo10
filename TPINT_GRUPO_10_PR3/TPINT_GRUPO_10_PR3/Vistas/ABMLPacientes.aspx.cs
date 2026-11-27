@@ -11,7 +11,6 @@ namespace TPINT_GRUPO_10_PR3
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            ValidarRol(0);
 
             if (!IsPostBack)
             {
@@ -21,7 +20,6 @@ namespace TPINT_GRUPO_10_PR3
             if (Session["NombreUser"] != null)
             {
                 string nombreUsuario = Session["NombreUser"].ToString();
-                lblUsuarioLogueado.Text = nombreUsuario;
             }
             else
             {

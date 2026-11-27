@@ -29,11 +29,11 @@ namespace TPINT_GRUPO_10_PR3.Vistas
                 if (rol == 0)
                     Response.Redirect("~/Vistas/ABMLMedicos.aspx");   // admin
                 else if (rol == 1)
-                    Response.Redirect("~/ABMLPacientes.aspx");   // médico
+                    Response.Redirect("~/Vistas/ABMLPacientes.aspx");   // médico
                 else if (rol == 2)
-                    Response.Redirect("~/ABMLPacientes.aspx"); // paciente
+                    Response.Redirect("~/Vistas/ABMLPacientes.aspx"); // paciente
                 else
-                    Response.Write("Rol no reconocido: " + rol);
+                    Response.Write("Rol no reconocido por el sistema: " + rol);
             }
             else
             {
