@@ -10,30 +10,33 @@ namespace TPINT_GRUPO_10_PR3.Datos
     {
         private readonly InformeDAL _informeDAL = new InformeDAL();
 
+        public DataTable ListarMedicos()
+        {
+            return _informeDAL.ListarMedicos();
+        }
+
         private void ValidarRangoFechas(DateTime fechaDesde, DateTime fechaHasta)
         {
             if (fechaDesde.Date > fechaHasta.Date)
             {
-                throw new ArgumentException("La fecha 'Desde' no puede ser mayor que la fecha 'Hasta'.");
+                throw new ArgumentException("La fecha desde no puede ser posterior a la fecha hasta.");
             }
         }
 
-        public DataTable ObtenerEstadisticasAsistencia(DateTime fechaDesde, DateTime fechaHasta)
+        public DataTable ObtenerAsistenciaGeneral(DateTime fechaDesde, DateTime fechaHasta)
         {
             ValidarRangoFechas(fechaDesde, fechaHasta);
-            return _informeDAL.ObtenerEstadisticasAsistencia(fechaDesde, fechaHasta);
+            return _informeDAL.ObtenerAsistenciaGeneral(fechaDesde, fechaHasta);
         }
 
-        public DataTable ObtenerTurnosPorEspecialidad(DateTime fechaDesde, DateTime fechaHasta)
+        public DataTable ObtenerAsistenciaPorMedico(int idMedico, DateTime fechaDesde, DateTime fechaHasta)
         {
+            if (idMedico <= 0)
+            {
+                throw new ArgumentException("Debe seleccionar un médico.");
+            }
             ValidarRangoFechas(fechaDesde, fechaHasta);
-            return _informeDAL.ObtenerTurnosPorEspecialidad(fechaDesde, fechaHasta);
-        }
-
-        public DataTable ObtenerTurnosPorMedico(DateTime fechaDesde, DateTime fechaHasta)
-        {
-            ValidarRangoFechas(fechaDesde, fechaHasta);
-            return _informeDAL.ObtenerTurnosPorMedico(fechaDesde, fechaHasta);
+            return _informeDAL.ObtenerAsistenciaPorMedico(idMedico, fechaDesde, fechaHasta);
         }
     }
 }
